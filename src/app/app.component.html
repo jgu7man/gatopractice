@@ -1,0 +1,11 @@
+<p>Current player: {{ player }}</p>
+
+<div class="row" *ngFor="let row of [1, 2, 3]; index as iRow">
+  <div class="col" *ngFor="let col of [1, 2, 3]; index as iCol">
+    <button class="box-btn" (click)="selectBox(player, iRow, iCol)">
+      {{ renderPlayer(iRow, iCol) }}
+    </button>
+  </div>
+</div>
+
+<button (click)="reset()">Reset</button>

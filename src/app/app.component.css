@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.row {
+  display: flex;
+}
+
+.box-btn {
+  height: 30px;
+  width: 30px;
+}
